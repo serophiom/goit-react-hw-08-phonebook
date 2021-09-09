@@ -2,9 +2,9 @@
 import { Switch, Route } from 'react-router-dom';
 import AppBar from './AppBar/AppBar';
 import HomeView from './views/HomeView/HomeView';
-import RegisterView from 'views/RegisterView/RegisterView';
+import RegisterView from './views/RegisterView/RegisterView';
 import LoginView from './views/LoginView/LoginView';
-import ContactsView from 'views/ContactsView/ContactsView';
+import ContactsView from './views/ContactsView/ContactsView';
 
 const App = () => {
   return (

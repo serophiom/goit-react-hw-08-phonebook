@@ -31,8 +31,9 @@ export const register = credentials => async dispatch => {
   dispatch(registerRequest());
 
   try {
-    const { data } = await axios.post('https://connections-api.herokuapp.com/users/singup', credentials);
+    const { data } = await axios.post('/users/singup', credentials);
     token.set(data.token);
+    console.log(token);
     dispatch(registerSuccess(data));
   } catch (error) {
     dispatch(registerError(error));
@@ -53,7 +54,7 @@ export const login = credentials => async dispatch => {
   dispatch(loginRequest());
 
   try {
-    const { data } = await axios.post('https://connections-api.herokuapp.com/users/login', credentials);
+    const { data } = await axios.post('/users/login', credentials);
     token.set(data.token);
     dispatch(loginSuccess(data));
   } catch (error) {
@@ -70,7 +71,7 @@ export const logout = () => async dispatch => {
   dispatch(logoutRequest());
 
   try {
-    axios.post('https://connections-api.herokuapp.com/users/logout');
+    axios.post('/users/logout');
     token.unset();
     dispatch(logoutSuccess());
   } catch (error) {
