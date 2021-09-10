@@ -18,9 +18,12 @@ import { toast } from 'react-toastify';
 
 axios.defaults.baseURL = 'https://connections-api.herokuapp.com';
 
+console.log(axios.defaults.baseURL);
+
 const token = {
   set(token) {
     axios.defaults.headers.common.Authorization = `Bearer ${token}`;
+    console.log(token);
   },
   unset() {
     axios.defaults.headers.common.Authorization = '';
@@ -29,8 +32,10 @@ const token = {
 
 export const register = credentials => async dispatch => {
   dispatch(registerRequest());
-
+  console.log(credentials);
+  console.log(axios.defaults.baseURL);
   try {
+    console.log(axios.defaults.baseURL);
     const { data } = await axios.post('/users/singup', credentials);
     token.set(data.token);
     console.log(token);

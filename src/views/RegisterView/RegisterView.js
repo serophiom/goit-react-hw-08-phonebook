@@ -35,12 +35,6 @@ const RegisterView = () => {
         setPassword('');
     };
 
-    // const reset = () => {
-    //    setName('');
-    //    setNumber('');
-    //    setPassword('');
-    // };
-
   return (
     <form onSubmit={handleSubmit}>
       <div className="input-form">

@@ -1,4 +1,3 @@
-// import { Route } from 'react-router';
 import { Switch, Route } from 'react-router-dom';
 import AppBar from './AppBar/AppBar';
 import HomeView from './views/HomeView/HomeView';
@@ -17,8 +16,7 @@ const App = () => {
       <Route path="/login" component={LoginView} />
       <Route path="/contacts" component={ContactsView} />
     </Switch>
-  
-      {/* <Phonebook /> */}
+
     </>
   );
 };
