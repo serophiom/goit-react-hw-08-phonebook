@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-axios.defaults.baseURL = 'http://localhost:7777';
+// axios.defaults.baseURL = 'http://localhost:7777';
 
 export async function fetchContacts() {
   const { data } = await axios.get(`/contacts`);

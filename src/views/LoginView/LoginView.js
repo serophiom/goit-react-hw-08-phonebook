@@ -21,9 +21,7 @@ const LoginView = () => {
     //     dispatch(addContact( name, number ));
     // };
 
-    const handleChange = event => {
-        const { name, value } = event.target;
-
+    const handleChange = ({target: { name, value }}) => {
         switch (name) {
             case 'email':
                 return setEmail(value);
@@ -41,12 +39,6 @@ const LoginView = () => {
         setEmail('');
         setPassword('');
     };
-
-    // const reset = () => {
-    //    setName('');
-    //    setNumber('');
-    //    setPassword('');
-    // };
 
   return (
     <form onSubmit={handleSubmit}>
