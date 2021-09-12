@@ -4,7 +4,7 @@ import './LoaderSpinner.css';
 
 const LoaderSpinner = () => (
   <div className="spinner">
-    <Loader type="Watch" color="#00BFFF" height={100} width={100} timeout={0} />
+    <Loader type="Watch" color="#ff3c00" height={100} width={100} timeout={0} />
   </div>
 );
 

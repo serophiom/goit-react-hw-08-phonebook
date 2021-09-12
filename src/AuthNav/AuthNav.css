@@ -1,42 +1,43 @@
-.nav-home {
-    margin-bottom: 20px;
+ul {
+    display: flex;
+
+    margin: 0;
+    padding: 0;
 }
 
-.link-home {
+.link-singup {
     margin-right: 20px;
 
     text-decoration: none;
 }
 
-.link-home:hover,
-.link-home:focus {
+.link-singup:hover,
+.link-singup:focus {
     text-decoration: underline;
-
     color: #fa0606;
 
     cursor: pointer;
 }
 
-.link-home__active {
+.link-singup__active {
     text-decoration: none;
 
     color: #fa0606;
 }
 
-.link-contacts {
+.link-login {
     text-decoration: none;
 }
 
-.link-contacts:hover,
-.link-contacts:focus {
+.link-login:hover,
+.link-login:focus {
     text-decoration: underline;
-
     color: #fa0606;
 
     cursor: pointer;
 }
 
-.link-contacts__active {
+.link-login__active {
     text-decoration: none;
 
     color: #fa0606;

@@ -16,11 +16,11 @@ const Contacts = () => {
     };
 
     return contacts && (
-        <ul>
+        <ul className="contacts-list">
             {showContacts.map(({ id, name, number }) => (
                 <li key={id} className="contacts__item">
                     <p className="contacts__text">{name}: {number}</p>
-                    <button onClick={() => onDeleteContact(id)}>delete</button>
+                    <button className="delete-btn" onClick={() => onDeleteContact(id)}>delete</button>
                 </li>
             ))}
         </ul>

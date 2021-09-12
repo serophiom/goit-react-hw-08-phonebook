@@ -1,21 +1,5 @@
 import axios from 'axios';
-// import {
-//   registerRequest,
-//   registerSuccess,
-//   registerError,
-//   loginRequest,
-//   loginSuccess,
-//   loginError,
-//   logoutRequest,
-//   logoutSuccess,
-//   logoutError,
-//   fetchCurrentUserRequest,
-//   fetchCurrentUserSuccess,
-//   fetchCurrentUserError,
-// } from './auth-actions';
-// import { toast } from 'react-toastify';
 import { createAsyncThunk } from '@reduxjs/toolkit';
-// import 'react-toastify/dist/ReactToastify.css';
 
 axios.defaults.baseURL = 'https://connections-api.herokuapp.com';
 

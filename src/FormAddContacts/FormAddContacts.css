@@ -1,25 +1,42 @@
-.input-form {
-    padding: 10px;
+.contacts-label {
+    display: flex;
+
+    text-align: center;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.contacts-input {
+    display: block;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    padding-left: 10px;
 
     width: 400px;
-    
+    height: 40px;
+
+    border: 1px solid #817d7d;
+    border-radius: 4px;
+}
+
+.contacts-input:hover,
+.contacts-input:focus {
     border: 1px solid #000000;
 }
 
-.add-input {
-    display: block;
-}
+.contacts-btn {
+    width: 150px;
+    height: 40px;
 
-.add-input:hover {
-    border: 2px solid #000000;
-}
-
-.btn-add {
-    margin-top: 20px;
-
-    border: 1px solid;
+    border: none;
     border-radius: 4px;
 
-    background-color: #5f28c7;
+    font-size: 18px;
+
+    color: #ffffff;
+    background-color: #fa0606;
     cursor: pointer;
 }

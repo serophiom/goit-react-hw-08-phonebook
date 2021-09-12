@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-color: #e9e0e0;
 }
 
 code {
@@ -13,6 +15,11 @@ code {
 }
 
 .main-container {
+  max-width: 720px;
+
+  margin-left: auto;
+  margin-right: auto;
+
   padding: 20px;
   text-align: center;
 }

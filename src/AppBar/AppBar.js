@@ -3,13 +3,14 @@ import * as authSelectors from '../redux/auth/auth-selectors';
 import Navigation from '../Navigation/Navigation';
 import AuthNav from '../AuthNav/AuthNav';
 import UserMenu from '../UserMenu/UserMenu';
+import './AppBar.css';
 
 export default function AppBar() {
   const isLoggedIn = useSelector(authSelectors.getIsLoggedIn);
 
   return (
     <header className="">
-      <div className="">
+      <div className="navigation">
         <Navigation />
 
         {isLoggedIn ? <UserMenu /> : <AuthNav />}
@@ -17,19 +18,3 @@ export default function AppBar() {
     </header>
   );
 }
-
-
-
-
-// import Navigation from '../Navigation/Navigation';
-// // import authSelectors from '../redux/auth/auth-selectors';
-
-// export default function AppBar() {
-// // const isLoggedIn = useSelector(authSelectors.getIsLoggedIn)
-
-//     return (
-//         <header>
-//             <Navigation />
-//         </header>
-//     )
-// }

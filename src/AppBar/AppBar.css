@@ -1,0 +1,14 @@
+.navigation {
+    margin-bottom: 40px;
+
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 20px;
+
+    border-bottom: 2px solid #fa0606;
+}
+
+ul {
+    list-style: none;
+}

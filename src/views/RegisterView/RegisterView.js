@@ -1,10 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-// import { toast } from 'react-toastify';
-// import { addContact } from '../../redux/contacts/contacts-operations';
 import * as authOperations from '../../redux/auth/auth-operations';
-// import { getLoading } from '../../redux/auth/auth-selectors';
-// import { getContacts } from 'redux/contacts/contacts-selectors';
 import './RegisterView.css';
 
 const RegisterView = () => {
@@ -36,40 +32,40 @@ const RegisterView = () => {
     };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="register-form">
       <div className="input-form">
-        <label>
-            Name<input
+        <label className="register-label">
+            <input
             className="register-input"
             type="text"
             name="name"
             value={name}
             onChange={handleChange}
-            placeholder="name"
+            placeholder="Name"
         /> 
         </label>
-        <label>
-            Email<input
+        <label className="register-label">
+            <input
             className="register-input"
             type="email"
             name="email"
             value={email}
             onChange={handleChange}
-            placeholder="email"
+            placeholder="Email"
             />
         </label>
-        <label>
-            Password<input
+        <label className="register-label">
+            <input
             className="register-input"
             type="password"
             name="password"
             value={password}
             onChange={handleChange}
-            placeholder="password"
+            placeholder="Password"
             />
         </label>
 
-        <button className="btn-add" type="submit">Sinup</button>
+        <button className="btn-add" type="submit">Sign up</button>
     </div>  
     </form>
 );

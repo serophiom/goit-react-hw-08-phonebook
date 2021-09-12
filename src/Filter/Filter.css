@@ -1,7 +1,21 @@
-.filter-input {
-    display: block;
+.filter-container {
+    text-align: right;
 }
 
-.filter-input:hover {
-    border: 2px solid #000000;
+.filter-input {
+   height: 20px; 
+
+   border: 1px solid #817d7d;
+   border-radius: 4px;
+}
+
+.filter-input:hover,
+.filter-input:focus {
+    border: 1px solid #000000;
+}
+
+.filter-label {
+    margin-left: auto;
+
+    font-size: 20px;
 }

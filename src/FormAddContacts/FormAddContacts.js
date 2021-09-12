@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import * as contactsSelectors from '../redux/contacts/contacts-selectors';
 import * as contactsOperations from '../redux/contacts/contacts-operations';
-// import { getContacts } from '../'
 import './FormAddContacts.css';
 
 export default function FormAddContacts() {
@@ -54,9 +53,9 @@ export default function FormAddContacts() {
         return (
             <form onSubmit={handleSubmit}>
               <div className="input-form">
-                <label>
-                    Name<input
-                    className="add-input"
+                <label className="contacts-label">
+                    <input
+                    className="contacts-input"
                     type="text"
                     name="name"
                     pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
@@ -64,11 +63,12 @@ export default function FormAddContacts() {
                     required
                     value={name}
                     onChange={handleChange}
+                    placeholder="Name"
                 /> 
                 </label>
-                <label>
-                    Number<input
-                    className="add-input"
+                <label className="contacts-label">
+                    <input
+                    className="contacts-input"
                     type="tel"
                     name="number"
                     pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
@@ -76,10 +76,11 @@ export default function FormAddContacts() {
                     required
                     value={number}
                     onChange={handleChange}
+                    placeholder="Number"
                     />
                 </label>
 
-                <button className="btn-add" type="submit">Add contact</button>
+                <button className="contacts-btn" type="submit">Add contact</button>
             </div>  
             </form>
         );

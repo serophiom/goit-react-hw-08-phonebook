@@ -2,7 +2,6 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { changeFilter } from '../redux/contacts/contacts-actions';
 import * as contactsSelectors from '../redux/contacts/contacts-selectors'; 
-// import { getContacts, getFilter } from '../redux/auth/auth-selectors';
 import './Filter.css';
 
 const Filter = () => {
@@ -22,9 +21,9 @@ const Filter = () => {
     };
 
     return contacts.length !== 0 ? (
-        <div>
-        <label>
-            Find contacts by Name<input
+        <div className="filter-container">
+        <label className="filter-label">
+            Find contact  <input
             className="filter-input"
             type="text"
             name="filter"

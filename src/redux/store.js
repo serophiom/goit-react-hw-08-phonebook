@@ -13,7 +13,6 @@ import logger from 'redux-logger';
 import storage from 'redux-persist/lib/storage';
 import contactsReducer from './contacts/contacts-reducer';
 import authSlice from './auth/auth-slice';
-// import authReducer from './auth/auth-reducer';
 
 const middleware = [
   ...getDefaultMiddleware({
