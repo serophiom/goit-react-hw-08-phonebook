@@ -1,4 +1,4 @@
-import Phonebook from '../../Phonebook/Phonebook';
+import Phonebook from '../../components/Phonebook/Phonebook';
 
 const ContactsViews = () => {
   return (

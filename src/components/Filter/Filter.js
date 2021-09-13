@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { changeFilter } from '../redux/contacts/contacts-actions';
-import * as contactsSelectors from '../redux/contacts/contacts-selectors'; 
+import { changeFilter } from '../../redux/contacts/contacts-actions';
+import * as contactsSelectors from '../../redux/contacts/contacts-selectors'; 
 import './Filter.css';
 
 const Filter = () => {
@@ -34,7 +34,18 @@ const Filter = () => {
         
         </div>
         ) : (
-        <p>There is no contacts in your Phonebook</p>
+            <div className="filter-container">
+            <label className="filter-label">
+            Find contact  <input
+            className="filter-input"
+            type="text"
+            name="filter"
+            value={filter}
+            onChange={getFilteredName}
+        />
+        </label>
+         <p className="filter-text">There is no contacts in your Phonebook</p>
+        </div>
     )
 };
 

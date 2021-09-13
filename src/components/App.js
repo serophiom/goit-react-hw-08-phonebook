@@ -1,7 +1,7 @@
 import { lazy, Suspense, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import * as authOperations from './redux/auth/auth-operations';
-import * as authSelectors from './redux/auth/auth-selectors';
+import * as authOperations from '../redux/auth/auth-operations';
+import * as authSelectors from '../redux/auth/auth-selectors';
 import { Switch } from 'react-router-dom';
 import PrivateRoute from './Routes/PrivetRoute';
 import PublicRoute from './Routes/PublicRoute';
@@ -10,17 +10,17 @@ import 'react-toastify/dist/ReactToastify.css';
 import AppBar from './AppBar/AppBar';
 
 const HomeView = lazy(() =>
-  import('./views/HomeView/HomeView' /* webpackChunkName: "home-view" */),
+  import('../views/HomeView/HomeView' /* webpackChunkName: "home-view" */),
 );
 const RegisterView = lazy(() =>
-  import('./views/RegisterView/RegisterView' /* webpackChunkName: "register-view" */),
+  import('../views/RegisterView/RegisterView' /* webpackChunkName: "register-view" */),
 );
 
 const LoginView = lazy(() =>
-  import('./views/LoginView/LoginView' /* webpackChunkName: "login-view" */),
+  import('../views/LoginView/LoginView' /* webpackChunkName: "login-view" */),
 );
 const ContactsView = lazy(() =>
-  import('./views/ContactsView/ContactsView' /* webpackChunkName: "contacts-view" */),
+  import('../views/ContactsView/ContactsView' /* webpackChunkName: "contacts-view" */),
 );
 
 const App = () => {
